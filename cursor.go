@@ -1,4 +1,4 @@
-package helper
+package go_fmt_helper
 
 import "fmt"
 
