@@ -52,7 +52,7 @@ func DumpCursor(row, col int) {
 	fmt.Printf("\033[%d;%dH", row, col)
 }
 
-// 光标左移指定行数
+// 光标左移指定列数
 func CursorLeftLines(line int) {
 	if line > 0 {
 		fmt.Printf("\033[%dD", line)
@@ -61,7 +61,7 @@ func CursorLeftLines(line int) {
 	}
 }
 
-// 光标右移指定位置
+// 光标右移指定列数
 func CursorRightLines(line int) {
 	if line > 0 {
 		fmt.Printf("\033[%dC", line)
